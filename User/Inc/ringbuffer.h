@@ -10,6 +10,12 @@
 extern  "C" {
 #endif
 
+/**
+ * This is the "context" struct of the ring buffer.
+ * The user does not have to care about the content, but every call to a
+ * ring buffer function requires a pointer to such a struct.
+ * The context struct is initialized with ringBufferInit()
+ */
 typedef struct {
    uint32_t tail;
    uint32_t head;
