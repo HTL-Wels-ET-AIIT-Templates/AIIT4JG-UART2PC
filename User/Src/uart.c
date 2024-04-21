@@ -92,7 +92,8 @@ static void Uart6Init(void) {
 //
 //	__HAL_USART_ENABLE_IT(&uartHandle, USART_IT_RXNE);
 //
-//	NVIC_EnableIRQ(USART6_IRQn);
+//	HAL_NVIC_EnableIRQ(USART6_IRQn);
+
 
 }
 
